@@ -1,0 +1,106 @@
+<!-- @format -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>my first form</title>
+    <link rel="stylesheet" href="form.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="form-title">Registration Form</h1>
+      <form action="#">
+        <div class="main-user-info">
+          <div class="user-input-box">
+            <label for="fullName">Full Name</label>
+            <input
+              type="text"
+              id="fullName"
+              name="fullName"
+              placeholder="Enter full name"
+              required
+            />
+          </div>
+          <div class="user-input-box">
+            <label for="username">Full Username</label>
+            <input
+              type="text"
+              id="username"
+              name="username"
+              placeholder="Enter username"
+              required
+            />
+          </div>
+          <div class="user-input-box">
+            <label for="email">Email</label>
+            <input
+              type="text"
+              id="email"
+              name="email"
+              placeholder="Enter email"
+              required
+            />
+          </div>
+          <div class="user-input-box">
+            <label for="phoneNumber">Phone Number</label>
+            <input
+              type="text"
+              id="phoneNumber"
+              name="phoneNumber"
+              placeholder="Enter phone number"
+              required
+            />
+          </div>
+
+          <div class="user-input-box">
+            <label for="password">Password</label>
+            <input
+              type="text"
+              id="password"
+              name="password"
+              placeholder="Enter password"
+              required
+            />
+          </div>
+          <div class="user-input-box">
+            <label for="ComfirmPassword"> Comfirm Password</label>
+            <input
+              type="text"
+              id="ComfirmPassword"
+              name="ComfirmPassword"
+              placeholder=" Comfirm Password"
+              required
+            />
+          </div>
+          <div>
+            <form action="">
+              <select name="track" id="">
+                <option value="" disabled selected hidden>select track</option>
+                <option value="frontend">frontend</option>
+                <option value="backend">backend</option>
+                <option value="product design">product design</option>
+              </select>
+            </form>
+          </div>
+        </div>
+        <div class="gender-details-box">
+          <span class="gender-title">Gender</span>
+          <div class="gender-category">
+            <input type="radio" name="gender" id="male" />
+            <label for="male">Male</label>
+            <input type="radio" name="gender" id="female" />
+            <label for="female">Female</label>
+            <input type="radio" name="gender" id="other" />
+            <label for="other">Other</label>
+          </div>
+        </div>
+        <div class="form-submit-btn">
+          <input type="submit" value="Register" />
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
